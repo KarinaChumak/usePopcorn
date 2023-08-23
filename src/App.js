@@ -164,7 +164,7 @@ function MovieDetails({
         try {
           setIsLoading(true);
           const res = await fetch(
-            `http://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
+            `https://www.omdbapi.com/?apikey=${KEY}&i=${selectedId}`
           );
 
           if (!res.ok)
